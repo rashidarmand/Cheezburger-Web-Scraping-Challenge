@@ -36,6 +36,7 @@ const fetch = require("node-fetch");
 				console.log(`Saving ${targetPage.pageNum} post images...`);
 				await saveImages(postImageLinks, `/images/${targetPage.pageNum}`);
 				console.log(`Post images for ${targetPage.pageNum} sucessfully saved!`);
+				console.log("=========================================================================================");
 			} catch (err) {
 				console.error(`Error downloading post images for ${targetPage.pageNum}`);
 			}
